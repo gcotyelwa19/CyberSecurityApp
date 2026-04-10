@@ -8,6 +8,8 @@ class Quiz
 
     public void Start()
     {
+        // Quiz colour change!! so it stands out more
+        Console.ForegroundColor = ConsoleColor.Cyan;    
         Console.WriteLine("\n=== Cybersecurity Quiz ===");
         Console.WriteLine("Answer the following questions by typing the option number.\n");
 
@@ -84,12 +86,16 @@ class Quiz
 
             if (int.TryParse(input, out int choice) && choice == q.Correct)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("✅ Correct!\n");
+                Console.ForegroundColor = ConsoleColor.Cyan; // Reset to quiz colour
                 score++;
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("❌ Incorrect.\n");
+                Console.ForegroundColor = ConsoleColor.Cyan; // Reset to quiz colour
                 incorrectAnswers.Add($"{q.Question} - Correct answer: {q.Options[q.Correct - 1]}");
             }
         }
@@ -105,5 +111,7 @@ class Quiz
             }
         }
 
+        // Reset console colour after quiz
+        Console.ResetColor();
     }
 }
