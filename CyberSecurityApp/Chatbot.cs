@@ -56,6 +56,11 @@ class Chatbot
             Console.WriteLine("8. Safe browsing");
             Console.WriteLine("9. Importance of updates");
             Console.WriteLine("10. Take Cybersecurity Quiz");
+            Console.WriteLine("11. What is encryption?");
+            Console.WriteLine("12. What is two-factor authentication?");
+            Console.WriteLine("13. What is ransomware?");
+            Console.WriteLine("14. What is VPN?");
+            Console.WriteLine("15. Data breach (coming soon)");
             Console.WriteLine("0. Exit");
             Console.WriteLine("========================");
             Console.ResetColor();
@@ -96,9 +101,34 @@ class Chatbot
                     Quiz quiz = new Quiz();
                     quiz.Start();
                     break;
+                case "11":
+                    Console.WriteLine("Encryption is the process of converting data into a code to prevent unauthorized access.");
+                    break;
+                case "12":
+                    Console.WriteLine("Two-factor authentication adds an extra layer of security by requiring a second form of verification.");
+                    break;
+                case "13":
+                    Console.WriteLine("Ransomware is malware that locks your files and demands payment to unlock them.");
+                    break;
+                case "14":
+                    Console.WriteLine("A VPN (Virtual Private Network) hides your IP address and encrypts your internet traffic for privacy.");
+                    break;
+                case "15":
+                    Console.WriteLine("Oh no! It looks like we're still developing that feature 🙂");
+                    break;
                 case "0":
-                    Console.WriteLine("Bye for now! Stay safe online!");
-                    return;
+                    Console.WriteLine("Are you sure you want to exit? (y/n)");
+                    string confirm = Console.ReadLine();
+                    if (confirm?.ToLower() == "y")
+                    {
+                        Console.WriteLine("Bye for now! Stay safe online!");
+                        return;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Exit cancelled. Returning to menu...");
+                    }
+                    break;
                 default:
                     Console.WriteLine("Invalid choice. Please select a number from the menu.");
                     break;

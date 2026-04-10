@@ -4,6 +4,7 @@ using System.Collections.Generic;
 class Quiz
 {
     private int score = 0;
+    private List<string> incorrectAnswers = new List<string>();
 
     public void Start()
     {
@@ -89,9 +90,20 @@ class Quiz
             else
             {
                 Console.WriteLine("❌ Incorrect.\n");
+                incorrectAnswers.Add($"{q.Question} - Correct answer: {q.Options[q.Correct - 1]}");
             }
         }
 
         Console.WriteLine($"Quiz finished! Your score: {score}/{questions.Count}");
+
+        if (incorrectAnswers.Count > 0)
+        {
+            Console.WriteLine("\nReview of incorrect answers:");
+            foreach (var item in incorrectAnswers)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
     }
 }
