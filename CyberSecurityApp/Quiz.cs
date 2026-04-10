@@ -31,6 +31,42 @@ class Quiz
                 "2. Stores passwords",
                 "3. Detects malware",
                 "4. Encrypts emails"
+            }, 1),
+
+            // New questions
+            ("What is malware?", new string[] {
+                "1. Harmful software designed to damage or steal data",
+                "2. A secure password manager",
+                "3. A type of encryption",
+                "4. A safe website"
+            }, 1),
+
+            ("What is social engineering?", new string[] {
+                "1. Manipulating people to reveal confidential info",
+                "2. Designing secure networks",
+                "3. Writing strong code",
+                "4. Encrypting files"
+            }, 1),
+
+            ("Why are software updates important?", new string[] {
+                "1. They patch security holes",
+                "2. They make your computer slower",
+                "3. They delete old files",
+                "4. They are optional"
+            }, 1),
+
+            ("What does VPN stand for?", new string[] {
+                "1. Virtual Private Network",
+                "2. Very Personal Notebook",
+                "3. Verified Password Node",
+                "4. Virtual Protection Number"
+            }, 1),
+
+            ("What is a data breach?", new string[] {
+                "1. Unauthorized access to sensitive information",
+                "2. A type of firewall",
+                "3. A secure login process",
+                "4. An antivirus update"
             }, 1)
         };
 

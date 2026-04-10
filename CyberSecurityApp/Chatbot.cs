@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Threading;
 
 class Chatbot
@@ -12,6 +11,8 @@ class Chatbot
         Console.WriteLine("        CYBERSECURITY CHATBOT");
         Console.WriteLine("===================================");
         Console.ResetColor();
+
+        // greeting already played in Program.Main
 
         // ASCII art
         Console.ForegroundColor = ConsoleColor.Magenta;
