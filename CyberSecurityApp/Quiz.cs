@@ -99,8 +99,10 @@ class Quiz
                 incorrectAnswers.Add($"{q.Question} - Correct answer: {q.Options[q.Correct - 1]}");
             }
         }
-
+        // Final reuslts ( timestamp added for fun )
         Console.WriteLine($"Quiz finished! Your score: {score}/{questions.Count}");
+        Console.WriteLine($"Completed on: {DateTime.Now}");
+
 
         if (incorrectAnswers.Count > 0)
         {
