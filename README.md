@@ -1,8 +1,8 @@
-CyberSecurityApp
+**CyberSecurityApp JARVIS**
 An interactive C# console application designed to teach cybersecurity concepts through a chatbot named JARVIS and a color‑coded quiz. This project demonstrates both technical programming skills and user experience design, with professional GitHub commits and CI integration.
 
 
-Features
+**Features**
 - JARVIS Chatbot
 - Explains cybersecurity topics such as VPNs, ransomware, and encryption.
 - Exit confirmation to prevent accidental closure.
@@ -18,7 +18,7 @@ Features
 - GitHub Actions workflow builds the project automatically on every commit.
 - Ensures code quality and consistency.
 
-Project Structure
+**Project Structure**
 /ProjectFolder
 ├── Program.cs
 ├── Chatbot.cs
@@ -28,7 +28,7 @@ Project Structure
 └── .github/workflows/
     └── dotnet.yml
 
-How to Run
+**How to Run**
 - Clone the repository:
 git clone https://github.com/gcotyelwa19/CyberSecurityApp.git
 - 
@@ -41,7 +41,7 @@ cd CyberSecurityApp
 dotnet build
 dotnet run
 
-Video Presentation
+**Video Presentation**
 Watch the full demo here: CyberSecurityApp Presentation
 The video includes:
 - The program running (JARVIS chatbot + quiz).
@@ -49,7 +49,7 @@ The video includes:
 - Logic explanation (color coding, scoring, timestamp).
 
 
-Author
+**Author**
 Developed by Gcotyelwa Sivuyile Mbuti
 Student number 10468229
 IIE RC NMB
