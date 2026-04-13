@@ -5,7 +5,7 @@ An interactive C# console application designed to teach cybersecurity concepts t
 
 **Features**
 - JARVIS Chatbot
-- Explains cybersecurity topics such as VPNs, ransomware, and encryption.
+- Explains cybersecurity topics such as VPNs, ransomware, and encryption. 
 - Exit confirmation to prevent accidental closure.
 - Interactive Quiz
 - Multiple‑choice questions with instant feedback.
@@ -20,14 +20,20 @@ An interactive C# console application designed to teach cybersecurity concepts t
 - Ensures code quality and consistency.
 
 **Project Structure**
+
 /ProjectFolder
 ├── Program.cs
+
 ├── Chatbot.cs
+
 ├── Quiz.cs
+
 ├── greeting.wav
+
 ├── README.md
+
 └── .github/workflows/
-    └── dotnet.yml
+   └── dotnet.yml
 
 **How to Run**
 - Clone the repository:
